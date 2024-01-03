@@ -1,0 +1,204 @@
+:root {
+  --light-pink-texts: hsl(321, 100%, 78%);
+  --pink-texts: hsl(322, 100%, 66%);
+  --light-red-texts: hsl(0, 100%, 63%);
+  --dark-cyan-texts: hsl(192, 100%, 9%);
+  --pale-blue-texts: hsl(207, 100%, 98%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.header {
+  display: flex;
+  position: relative;
+  padding: 1rem 1rem;
+}
+.msg-icon {
+  width: 40px;
+  height: auto;
+}
+.huddle {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+  position: absolute;
+  padding: 1rem 1rem;
+  top: -5px;
+  left: 40px;
+}
+
+.btn {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  padding-right: 1rem;
+}
+.btn-1 {
+  font-size: 1.3rem;
+  padding: 10px 25px;
+  border-radius: 10rem;
+  color: var(--pink-texts);
+  border: 3px solid var(--pink-texts);
+  background-color: white;
+  position: absolute;
+  bottom: 1vh;
+}
+h1 {
+  font-family: "Open Sans";
+  text-align: center;
+  color: var(--dark-cyan-texts);
+}
+
+.main-text {
+  max-width: 60ch;
+  text-align: center;
+  margin: 0 auto;
+  color: var(--dark-cyan-texts);
+  font-family: "Open Sans";
+  margin-bottom: 2em;
+}
+.btn-2 {
+  font-size: 1.2rem;
+  font-family: "Open Sans";
+  font-weight: 600;
+  padding: 1.3em 5em;
+  border-radius: 10rem;
+  background-color: var(--pink-texts);
+  border: 3px solid var(--pink-texts);
+  color: var(--pale-blue-texts);
+  opacity: 0.5;
+}
+.button-container {
+  text-align: center;
+}
+.img-container {
+  text-align: center;
+}
+.box {
+  width: 50vw;
+  min-height: 10vh;
+  margin-top: 5em;
+  object-fit: cover;
+  overflow: hidden;
+}
+.people-section {
+  background-color: rgb(23, 4, 4);
+  width: 90%;
+}
+.human-icons {
+  display: flex;
+  position: relative;
+}
+.humans {
+  position: absolute;
+  left: 27%;
+  margin-top: 4em;
+  width: 30px;
+  min-height: auto;
+  margin-top: 2.9rem;
+}
+.people-text {
+  display: flex;
+  position: relative;
+}
+.comm-number {
+  color: var(--dark-cyan-texts);
+  font-weight: 700;
+  font-size: 3.6em;
+  font-family: "Open Sans";
+  position: absolute;
+  left: 32%;
+  transform: translate(-50%);
+  top: 1.3em;
+}
+.comm-text {
+  font-family: "Open Sans";
+  color: var(--dark-cyan-texts);
+  position: absolute;
+  left: 32%;
+  transform: translate(-50%);
+  top: 10.5em;
+}
+.message-parent {
+  display: flex;
+  position: relative;
+}
+.msg-icon1 {
+  width: 27px;
+  height: auto;
+  position: absolute;
+  right: 40%;
+  top: 4rem;
+  margin-top: -0.9rem;
+}
+.msg-parent {
+  display: flex;
+  position: relative;
+}
+.msg-number {
+  font-weight: 700;
+  font-family: "Open Sans";
+  color: var(--dark-cyan-texts);
+  font-size: 3.6em;
+  position: absolute;
+  left: 64%;
+  transform: translate(-50%);
+  top: 1.3em;
+}
+.msg-text {
+  font-family: "Open Sans";
+  color: var(--dark-cyan-texts);
+  position: absolute;
+  left: 63%;
+  transform: translate(-50%);
+  top: 10.5em;
+}
+.column {
+  margin: 5rem auto;
+}
+.pattern-top-desktop,
+.pattern-bottom-desktop {
+  display: block;
+  width: 100%;
+}
+.pattern-top-mobile,
+.pattern-bottom-mobile,
+.blue-bottom-mobile-2 {
+  display: none;
+}
+.column__text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+  padding: 5rem;
+}
+.first,
+.third {
+  background: hsl(207, 100%, 98%);
+}
+.column__text img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.first-img,
+.third-img {
+  order: 2;
+}
+.column__text h2 {
+  font-size: 2.5rem;
+  font-family: "Open Sans";
+}
+.first section,
+.third section {
+  order: 1;
+}
+section p {
+  font-family: "Open Sans";
+  color: var(--dark-cyan-texts);
+}
+
+/* DRY for comm-number and comm-text */
+/* Use media query for comm-number and msg-text*/
