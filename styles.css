@@ -1,6 +1,6 @@
 :root {
   --light-pink-texts: hsl(321, 100%, 78%);
-  --pink-texts: hsl(322, 100%, 66%);
+  --pink-texts: hsl(329, 100%, 66%);
   --light-red-texts: hsl(0, 100%, 63%);
   --dark-cyan-texts: hsl(192, 100%, 9%);
   --pale-blue-texts: hsl(207, 100%, 98%);
@@ -19,10 +19,10 @@
   width: 40px;
   height: auto;
 }
-.huddle {
+.header h1 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 700;
-  font-size: 23px;
+  font-size: 27px;
   position: absolute;
   padding: 1rem 1rem;
   top: -5px;
@@ -65,10 +65,11 @@ h1 {
   font-weight: 600;
   padding: 1.3em 5em;
   border-radius: 10rem;
-  background-color: var(--pink-texts);
+  background: var(--pink-texts);
   border: 3px solid var(--pink-texts);
   color: var(--pale-blue-texts);
   opacity: 0.5;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 .button-container {
   text-align: center;
@@ -156,16 +157,22 @@ h1 {
   top: 10.5em;
 }
 .column {
-  margin: 5rem auto;
+  margin: 14rem auto;
 }
 .pattern-top-desktop,
 .pattern-bottom-desktop {
   display: block;
   width: 100%;
 }
+.pattern-bottom-desktop,
+.blue-bottom-desktop-2 {
+  display: block;
+  width: 100%;
+}
 .pattern-top-mobile,
 .pattern-bottom-mobile,
-.blue-bottom-mobile-2 {
+.blue-bottom-mobile-2,
+.blue-top-mobile-2 {
   display: none;
 }
 .column__text {
@@ -183,6 +190,9 @@ h1 {
   max-width: 100%;
   max-height: 100%;
 }
+/* .conversation {
+  max
+} */
 .first-img,
 .third-img {
   order: 2;
@@ -199,6 +209,138 @@ section p {
   font-family: "Open Sans";
   color: var(--dark-cyan-texts);
 }
+.build {
+  text-align: center;
+}
+.build h3 {
+  font-family: "Open Sans";
+  color: var(--dark-cyan-texts);
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.btn-3 {
+  font-size: 1.2rem;
+  font-family: "Open Sans";
+  font-weight: 600;
+  padding: 1.3em 5em;
+  border-radius: 10rem;
+  background-color: var(--pink-texts);
+  border: 3px solid var(--pink-texts);
+  color: var(--pale-blue-texts);
+  opacity: 0.5;
+  margin-top: 1rem;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+footer {
+  margin-top: 10rem;
+}
+.navy-blue-footer-top {
+  display: block;
+  width: 100%;
+}
+.huddle-logo {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(125deg)
+    brightness(103%) contrast(103%);
+  margin-top: 3rem;
+}
+.first-grid p, .phone-logo, img {
+  color: hsl(0, 0%, 100%)
+}
+.first-grid p {
+  max-width: 36ch;
+  margin-top: 2rem;
+}
+/* .contact-section {
+  display: flex;
+  justify-content: space-between; 
+  margin: 1rem auto;
+} */
+.phone-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0.3rem auto;
+  /* margin-bottom: 3rem; */
+}
+.email-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem auto;
+}
+.phone-logo {
+  margin-top: 2rem;
+}
+.email-logo {
+  color: hsl(0, 0%, 100%)
+}
+.footer-first {
+  background-color: var(--dark-cyan-texts);
+  padding: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+h3, p {
+  color:hsl(0, 0%, 100%)
+}
+h3 {
+  margin-top: 3.3rem;
+}
+.second-grid p {
+  max-width: 41ch;
+  margin-top: 1.7rem;
+}
+.infield input {
+  font-size: 0.9rem;
+  font-family: "Open Sans";
+  width: 100%;
+  height: 3rem;
+  outline: none;
+  border: none;
+  border-radius: 0.3rem;
+  border: 0.5px solid var(--pink-texts);
+  margin-top: 1.7rem;
+  padding: 1.3rem 9rem;
+  padding-left: 1rem;
+}
+.infield #error {
+  color: hsl(0, 100%, 63%);
+  font-size: 0.8rem;
+  margin: 0.5rem 0;
+  display: none;
+}
 
+.btn-5:hover {
+  background: hsl(321, 100%, 78%);
+}
+.btn-5 {
+  font-size: 1.3rem;
+  font-family: "Open Sans";
+  padding: 0.7rem 3rem;
+  border-radius: 0.5rem;
+  background-color: var(--light-pink-texts);
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: -1.9rem;
+}
+.media-icons i {
+  color: hsl(0, 0%, 100%);
+  margin-right: 3rem;
+  margin-top: 2.0rem;
+  height: auto;
+  font-size: 2.0rem;
+}
+.media-icons i:hover {
+  color: rgb(52, 204, 250);
+}
+.inputs {
+display: flex;
+align-items: center;
+gap: 1rem;
+}
+/* .footer-first {
+  display: grid;
+  grid-template-columns: auto auto auto;
+} */
 /* DRY for comm-number and comm-text */
 /* Use media query for comm-number and msg-text*/
