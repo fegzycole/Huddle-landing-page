@@ -169,6 +169,10 @@ h1 {
   display: block;
   width: 100%;
 }
+.adjusted-top {
+  position: relative;
+  top: -200px;
+}
 .pattern-top-mobile,
 .pattern-bottom-mobile,
 .blue-bottom-mobile-2,
